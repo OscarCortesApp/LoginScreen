@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">LoginScreen</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">REGISTRARSE</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Bienvenido !"</string>
+    <string name="invalid_username">Nombre de usuario no valido</string>
+    <string name="invalid_password">La contraseña debe tener más de 5 caracteres</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_home">Home</string>
+    <string name="action_log_in">INICIAR SESIÓN</string>
+    <string name="notasButton">Notas</string>
+    <string name="horarioButton">HORARIO</string>
+    <string name="calendarioButton">CALENDARIO</string>
+    <string name="estudianteText">ESTUDIANTE</string>
+    <string name="todoText">TODO</string>
+</resources>
