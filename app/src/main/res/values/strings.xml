@@ -20,4 +20,7 @@
     <string name="SecondPeriodButton">2019 2S</string>
     <string name="totalButton">TOTAL</string>
     <string name="FirstPeriodButton">2019 1S</string>
+    <string name="title_activity_horario">HorarioActivity</string>
+    <string name="semanaButton">SEMANA</string>
+    <string name="title_activity_semana">SemanaActivity</string>
 </resources>

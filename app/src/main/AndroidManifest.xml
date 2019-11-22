@@ -10,9 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".data.model.SemanaActivity"
+            android:label="@string/title_activity_semana"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".HorarioActivity"
+            android:label="@string/title_activity_horario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".NotasScreen"
             android:label="@string/title_activity_notas_screen"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home"
