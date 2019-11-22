@@ -16,4 +16,8 @@
     <string name="calendarioButton">CALENDARIO</string>
     <string name="estudianteText">ESTUDIANTE</string>
     <string name="todoText">TODO</string>
+    <string name="title_activity_notas_screen">NotasScreen</string>
+    <string name="SecondPeriodButton">2019 2S</string>
+    <string name="totalButton">TOTAL</string>
+    <string name="FirstPeriodButton">2019 1S</string>
 </resources>
