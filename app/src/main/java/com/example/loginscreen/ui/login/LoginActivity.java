@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -22,6 +23,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.loginscreen.Home;
+import com.example.loginscreen.HorarioActivity;
+import com.example.loginscreen.NotasScreen;
 import com.example.loginscreen.R;
 import com.example.loginscreen.ui.login.LoginViewModel;
 import com.example.loginscreen.ui.login.LoginViewModelFactory;
@@ -74,7 +78,8 @@ public class LoginActivity extends AppCompatActivity {
                 setResult(Activity.RESULT_OK);
 
                 //Complete and destroy login activity once successful
-                finish();
+                configureNextButton();
+
             }
         });
 
@@ -123,9 +128,20 @@ public class LoginActivity extends AppCompatActivity {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
         // TODO : initiate successful logged in experience
         Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
+
     }
 
     private void showLoginFailed(@StringRes Integer errorString) {
         Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
+    }
+
+    private void configureNextButton() {
+        Button btnLogin = (Button) findViewById(R.id.login); //crear pantalla
+        btnLogin.setOnClickListener(new View.OnClickListener() { //Evento escuchador en click
+            @Override
+            public void onClick(View view) { //
+                startActivity(new Intent(LoginActivity.this, Home.class)); //cambiar de pantalla, queda en pantalla la anterior (una sobre otra)
+            }
+        });
     }
 }

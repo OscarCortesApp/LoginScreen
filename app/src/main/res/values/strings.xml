@@ -23,4 +23,5 @@
     <string name="title_activity_horario">HorarioActivity</string>
     <string name="semanaButton">SEMANA</string>
     <string name="title_activity_semana">SemanaActivity</string>
+    <string name="logo">logo</string>
 </resources>
